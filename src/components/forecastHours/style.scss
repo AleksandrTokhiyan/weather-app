@@ -1,0 +1,50 @@
+.forecast-hours_grid {
+  padding: 15px;
+  max-width: 100%;
+  display: inherit;
+
+  h3 {
+    margin-bottom: 20px;
+    font-size: 2.1rem;
+  }
+
+
+  .forecasts-container {
+    margin: auto;
+    overflow: auto;
+    background-color: #202b3b;
+    display: flex;
+    width: 100%;
+    overflow-x: scroll;
+    padding: 0 0 20px 0;
+    white-space: nowrap;
+
+    .forecast {
+      flex: 0 0 155px;
+      border-right: 1px solid #2a384d;
+      padding: 20px;
+      text-align: center;
+
+      img{
+        max-width: 100px;
+        margin: 10px auto;
+      }
+      h4{
+        font-size: 3rem;
+        font-family: MontserratSemiBold,sans-serif;
+        span::after{
+          content: "\00B0";
+          font-size: 3rem;
+          font-family: MontserratSemiBold,sans-serif;
+          margin: 0 3px;
+        }
+      }
+      p{
+        font-size: 1.9rem;
+      }
+    }
+  }
+
+
+}
+

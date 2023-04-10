@@ -1,0 +1,199 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+  outline: none !important;
+  font-size: 10px;
+  color: #fff;
+  font-family: MontserratRegular, sans-serif;
+
+}
+
+#root {
+  background-color: #313b49;
+  padding: 30px;
+
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+}
+img{
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+@font-face {
+  font-family: MontserratLight;
+  src: url(assets/fonts/Montserrat/Montserrat-Light.ttf);
+}
+
+@font-face {
+  font-family: MontserratRegular;
+  src: url(assets/fonts/Montserrat/Montserrat-Regular.ttf);
+}
+
+@font-face {
+  font-family: MontserratMedium;
+  src: url(assets/fonts/Montserrat/Montserrat-Medium.ttf);
+}
+
+@font-face {
+  font-family: MontserratSemiBold;
+  src: url(assets/fonts/Montserrat/Montserrat-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: MontserratBold;
+  src: url(assets/fonts/Montserrat/Montserrat-Bold.ttf);
+}
+
+*::-webkit-scrollbar-track
+{
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  border-radius: 10px;
+  background-color: #F5F5F5;
+}
+
+*::-webkit-scrollbar
+{
+  width: 10px;
+  height: 10px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+*::-webkit-scrollbar-thumb
+{
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+  background-color: #35455e;
+}
+
+
+/***************************************/
+/************ Global Styles ************/
+/***************************************/
+
+.aside-left_grid {
+  grid-area: a;
+}
+
+.find-location_grid {
+  grid-area: b;
+}
+
+
+.current-day_grid {
+  grid-area: c;
+}
+.forecast-hours_grid {
+  grid-area: g;
+}
+.forecast-days_grid {
+  grid-area: d;
+}
+
+.air-conditions_grid {
+  grid-area: e;
+}
+
+.diagram_grid {
+  grid-area: f;
+}
+.grid-container {
+  & > div {
+    padding: 20px;
+  }
+
+  .content {
+    background-color: #202b3b;
+    border-radius: 15px;
+  }
+}
+.grid-container {
+  width: 100%;
+  max-width: 1600px;
+  padding: 20px;
+  display: grid;
+  gap: 20px;
+  margin: auto;
+  border-radius: 15px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  background-color: #0b131e;
+  grid-template-areas:
+    'a b b b b b b b b . . . .'
+    'a c c c c c c c c d d d d'
+    'a c c c c c c c c d d d d'
+    'a c c c c c c c c d d d d'
+    'a c c c c c c c c d d d d'
+    'a g g g g g g g g d d d d'
+    'a g g g g g g g g d d d d'
+    'a g g g g g g g g d d d d'
+    'a g g g g g g g g d d d d'
+    'a e e e e e e e e d d d d'
+    'a e e e e e e e e d d d d'
+    'a e e e e e e e e d d d d'
+    'a e e e e e e e e d d d d'
+    'a f f f f f f f f d d d d'
+    'a f f f f f f f f d d d d'
+    'a f f f f f f f f d d d d'
+    'a f f f f f f f f d d d d';
+}
+
+@media (max-width: 1600px) {
+*{
+  font-size: 9px;
+}
+  .grid-container {
+    display: grid;
+    grid-template-columns: .1fr 1fr;
+    grid-template-areas:
+                        'a b'
+                        'a c'
+                        'a g'
+                        'a f'
+                        'a e'
+                        'a d';
+    gap: 20px;
+    background-color: #0b131e;
+    padding: 10px;
+  }
+}
+@media (max-width: 1200px) {
+  *{
+    font-size: 8px;
+  }
+  .grid-container {
+    & > div {
+      padding: 10px;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  *{
+    font-size: 7px;
+  }
+}
+@media (max-width: 776px) {
+  *{
+    font-size: 6px;
+  }
+}
+
+@media (max-width: 480px) {
+  *{
+    font-size: 5px;
+  }
+}
+
+
+
+

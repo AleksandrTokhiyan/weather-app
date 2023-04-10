@@ -1,0 +1,43 @@
+.air-conditions_grid {
+  background-color: red;
+
+  h3 {
+    margin-bottom: 20px;
+    font-size: 2.1rem;
+
+  }
+}
+
+.air-conditions-container {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 20px;
+  column-gap: 20px;
+
+  .item {
+    display: flex;
+    width: calc(50% - 10px);
+    align-items: flex-start;
+    column-gap: 15px;
+
+    .icon {
+      max-width: 40px;
+    }
+
+    p {
+      font-size: 2.1rem;
+    }
+
+    h5 {
+      font-size: 3.5rem;
+      font-family: MontserratBold, sans-serif;
+      margin-top: 10px;
+      span::after{
+        content: "\00B0";
+        font-size: 3.5rem;
+        font-family: MontserratBold,sans-serif;
+        margin: 0 3px;
+      }
+    }
+  }
+}

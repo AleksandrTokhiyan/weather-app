@@ -1,0 +1,54 @@
+.find-location_grid {
+  position: relative;
+
+
+  .search-content {
+    position: relative;
+  }
+
+  .search {
+    background: transparent;
+    border: none;
+    width: 100%;
+    font-size: 1.6rem;
+    color: #fff;
+  }
+
+  .icon {
+    position: absolute;
+    right: 15px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 20px;
+    height: 20px;
+  }
+
+  .find-location-versions-city {
+    width: 100%;
+    margin-top: 25px;
+    position: absolute;
+    background-color: #202b3b;
+    border-radius: 15px;
+    z-index: 1;
+    left: 0;
+    padding: 20px 0;
+    border: 2px solid #898989;
+
+    li {
+      padding: 7px 15px;
+      font-size: 1.4rem;
+      transition: .3s ease;
+      cursor: pointer;
+
+      &:first-child{
+        border-radius: 15px 15px 0 0 ;
+      }
+
+      &:hover {
+
+        background-color: #35455e;
+      }
+    }
+  }
+}

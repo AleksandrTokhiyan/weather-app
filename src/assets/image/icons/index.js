@@ -1,0 +1,7 @@
+export const search = require('./search.png')
+export const location = require('./location.png')
+export const celsius = require('./celsius.png')
+export const fahrenheit = require('./fahrenheit.png')
+export const thermometer = require('./thermometer.png')
+export const wind = require('./wind.png')
+export const drop = require('./drop.png')

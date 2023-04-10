@@ -1,0 +1,11 @@
+.loaders{
+    display: flex;
+    height: calc(100vh - 60px);
+    align-items: center;
+    justify-content: center;
+    background: #33495f;
+
+    img{
+        width: 50%;
+    }
+}

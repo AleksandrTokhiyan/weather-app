@@ -1,0 +1,30 @@
+.aside-left_grid {
+  .switch-content{
+    margin-top: 20px;
+    display: grid;
+    row-gap: 10px;
+  }
+  > img{
+    margin-bottom: 20px;
+    border-radius: 5px;  }
+  button {
+    display: flex;
+    background-color: #35455e;
+    border: none;
+    padding: 5px;
+    margin: auto;
+    border-radius: 7px;
+    width: 90%;
+
+
+    &.disable{
+      opacity: .3;
+    }
+    .icon {
+
+    }
+  }
+}
+
+
+
